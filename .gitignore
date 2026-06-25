@@ -1,0 +1,38 @@
+# NEVER commit these — private keys and credentials
+asterdex_trade/account_data.py
+*.pem
+*.ppk
+*.key
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Live state files (contain open position data)
+algo_state_*.json
+whale_*.json
+
+# Logs (grow large, not useful in repo)
+*.log
+lsco.log
+
+# Trade log (private P&L data)
+trade_log.json
+trade_log_live.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Heatmap JSON data (regenerated live, too large)
+data_fetching/binance_liq_heatmap*.json
